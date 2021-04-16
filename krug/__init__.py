@@ -1,19 +1,15 @@
 import math
 from time import sleep
 
-x0 = 5
-y0 = 10
-x1 = 8
-y1 = 7
-
 class Circle:
-    def __init__(self, x0, y0, x1, y1, R, r, _x0=None, _y0=None, _x1=None, _y1=None, _R=None, _r=None):
+    def __init__(self, x0, y0, x1, y1, R, r,):
         self.x0 = x0
         self.y0 = y0
         self.x1 = x1
         self.y1 = y1
         self.R = R
-        if self.x0 > 0 and self.y0 > 0 and self.x1 > 0 and self.y1 > 0 and self._x0 is None and self._y0 is None and self._x1 is None and self._y1 is None and self._R is None and self._r is None:
+        self.r = r
+        if self.x0 > 0 and self.y0 > 0 and self.x1 > 0 and self.y1 > 0 and self.x0 is None:
             if self.R > 0 and self.r > 0:
                 width = self.R - self.r
                 if width >= 1:
@@ -44,18 +40,14 @@ class Circle:
         print("Площадь круга: ", Sq, ".")
 
 if __name__ == '__main__':
-    flag = True
-    while flag:
-        f_x0 = 5
-        print(f_x0)
-        f_y0 = 8
-        print(f_y0)
-        f_x1 = 12
-        print(f_x1)
-        f_y1 = 20
-        print(f_y1)
-        f_R = abs(f_x0 - f_x1) / 2
-        print("Внешний радиус (R):", f_R)
-        f_r = 4
-        circle1 = Circle(f_x0, f_y0, f_x1, f_y1, f_R, f_r)
-
+        x0 = 5
+        print(x0)
+        y0 = 8
+        print(y0)
+        x1 = 12
+        print(x1)
+        y1 = 20
+        print(y1)
+        R = abs(x0 - x1) / 2
+        print("Внешний радиус (R):", R)
+        r = 5
