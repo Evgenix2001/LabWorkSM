@@ -56,6 +56,6 @@ if __name__ == '__main__':
         print(f_y1)
         f_R = abs(f_x0 - f_x1) / 2
         print("Внешний радиус (R):", f_R)
-        f_r = int(input())
-        circle1 = Circle(f_x0, f_y0, f_x1, f_y1, f_R)
+        f_r = 4
+        circle1 = Circle(f_x0, f_y0, f_x1, f_y1, f_R, f_r)
 
